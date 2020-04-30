@@ -4,8 +4,8 @@
 #include<math.h>
 #include<string.h>
 
-int x,y,flag; 
-//
+int x,n,t,i,y,flag; 
+long int e[50], d[50], temp[50], j, m[50], en[50];
 char msg[100];
 int prime(long int);
 void encryption_key();
@@ -38,6 +38,14 @@ int main()
     m[i] = msg[i];
   n = x * y;
   t = (x-1) * (y-1);
+  encryption_key();
+  printf("\nPOSSIBLE VALUES OF e AND d ARE\n");
+  for(i = 0; i < j-1; i++)
+    printf("\n%ld\t%ld", e[i], d[i]);
+  encrypt();
+  decrypt();
+  return 0;
+}
   
   
   
