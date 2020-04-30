@@ -3,3 +3,36 @@
 #include<stdlib.h>
 #include<math.h>
 #include<string.h>
+
+int x,y,flag; //flag idea is taken from course coal
+char msg[100];
+int prime(long int);
+
+
+
+
+int main()
+{
+  printf("\n Enter first Prime Number\n")
+  scanf("%d",&x);
+  flag= prime(x);
+  if(flag==0)
+  {
+    printf("\nInvalid Input\n");
+    exit(0);
+  }
+  
+  printf("\n Enter second Prime Number\n")
+  scanf("%d",&y);
+  flag= prime(y);
+  if(flag==0 || x==y)
+  {
+    printf("\nInvalid Input\n");
+    exit(0);
+  }
+  
+  
+  
+  
+  
+}
