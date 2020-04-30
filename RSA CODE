@@ -4,12 +4,14 @@
 #include<math.h>
 #include<string.h>
 
-int x,y,flag; //flag idea is taken from course coal
+int x,y,flag; 
+//
 char msg[100];
 int prime(long int);
-
-
-
+void encryption_key();
+long int cd(long int);
+void encrypt();
+void decrypt();
 
 int main()
 {
@@ -30,7 +32,12 @@ int main()
     printf("\nInvalid Input\n");
     exit(0);
   }
-  
+   printf("\nENTER MESSAGE OR STRING TO ENCRYPT\n");
+  scanf("%s",msg);
+  for(i = 0; msg[i] != NULL; i++)
+    m[i] = msg[i];
+  n = x * y;
+  t = (x-1) * (y-1);
   
   
   
