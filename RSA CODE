@@ -46,6 +46,23 @@ int main()
   decrypt();
   return 0;
 }
+int prime(long int pr)
+{
+  int i;
+  j = sqrt(pr);
+  for(i = 2; i <= j; i++)
+  {
+   if(pr % i == 0)
+     return 0;
+  }
+  return 1;
+ }
+ //function to generate encryption key
+ {
+ 
+ }
+ 
+ //isky neechy encryption or decryption ajai ga mubahsir or areeb..
   
   
   
