@@ -88,7 +88,7 @@ void encrypt()
   for(i = 0; en[i] != -1; i++)
     printf("%c", en[i]);
 }
-  
+  areeb
   
   
   
