@@ -57,10 +57,32 @@ int prime(long int pr)
   }
   return 1;
  }
- //function to generate encryption key
- {
- 
+ //generate encryption key
+ void encryption_key()
+{
+  int k;
+  k = 0;
+  for(i = 2; i < t; i++)
+  {
+    if(t % i == 0)
+     continue;
+    flag = prime(i);
+    if(flag == 1 && i != x && i != y)
+    {
+     e[k] = i;
+     flag = cd(e[k]);
+    if(flag > 0)
+    {
+     d[k] = flag;
+     k++;
+    }
+   if(k == 99)
+    break;
+   }
  }
+}
+ 
+ 
  
  //encrypt the message
 void encrypt()
