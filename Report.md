@@ -51,5 +51,5 @@ long int cd(long int a)
 All the concepts used in our project were well explained by our lecturer so we didn't face much problem but combining multiple algorithms together was a bit difficult for us.
 ## References##
 * Youtube.com 
-* [links] https://www.youtube.com/watch?v=sYGS80-Joi8
+* https://www.youtube.com/watch?v=sYGS80-Joi8
 * Geeks for geeks
